@@ -1,0 +1,17 @@
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore data files
+wifi_packets.csv
+
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
