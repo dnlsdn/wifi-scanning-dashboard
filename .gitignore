@@ -1,17 +1,17 @@
-# Ignore Python virtual environment folder
+# ─── Python Virtual Environment ───────────────────────────────
 venv/
 
-# Ignore data files
+# ─── Data Files (generated at runtime) ────────────────────────
 wifi_packets.csv
 
-# Byte-compiled Python files
+# ─── Python cache files ───────────────────────────────────────
 __pycache__/
 *.py[cod]
 
-# OS-specific files
+# ─── OS‐specific files ────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# Editor folders
+# ─── IDE / Editor folders ─────────────────────────────────────
 .vscode/
 .idea/
