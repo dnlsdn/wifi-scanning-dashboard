@@ -4,7 +4,10 @@ import csv
 import os
 
 app = Flask(__name__)
-DATA_FILE = "wifi_packets.csv"
+# Percorso assoluto al file dei pacchetti per evitare problemi se l'app viene
+# avviata da una directory differente dal progetto
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "wifi_packets.csv")
 
 def read_latest(n=50):
     """
