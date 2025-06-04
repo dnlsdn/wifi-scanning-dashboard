@@ -3,7 +3,10 @@ from scapy.all import *
 import csv
 import os
 
-OUTPUT_FILE = "wifi_packets.csv"
+# Percorso assoluto al file CSV in modo da poter eseguire lo script
+# da qualunque directory mantenendo l'output nello stesso path del sorgente
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(BASE_DIR, "wifi_packets.csv")
 
 # Se il CSV non esiste, crealo con l'header
 if not os.path.isfile(OUTPUT_FILE):
